@@ -26,6 +26,8 @@ const (
 	defaultCertFile     = "cert.pem"
 )
 
+func SOMELINTERISSUE() {}
+
 func main() {
 	if reexec.Init() {
 		return
