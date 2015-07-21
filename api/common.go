@@ -110,7 +110,7 @@ func MatchesContentType(contentType, expectedType string) bool {
 	return err == nil && mimetype == expectedType
 }
 
-// LoadOrCreateTrustKey attempts to load the libtrust key at the given path,
+// rCreateTrustKey attempts to load the libtrust key at the given path,
 // otherwise generates a new one
 func LoadOrCreateTrustKey(trustKeyPath string) (libtrust.PrivateKey, error) {
 	err := system.MkdirAll(filepath.Dir(trustKeyPath), 0700)
